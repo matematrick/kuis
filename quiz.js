@@ -36,7 +36,7 @@
         nextButton_text: "Soal berikutnya",
         completeButton_text: "Selesai mengerjakan",
         viewResultsButton_text: "Lihat hasil",
-        resultsHeader_text: "Inilah nilai Anda",
+        resultsHeader_text: "Pembahasan",
         quizScore_text: "Anda menjawab benar %totalScore soal dari %totalQuestions soal",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
