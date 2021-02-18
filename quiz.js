@@ -40,11 +40,11 @@
         quizScore_text: "Anda menjawab benar %totalScore soal dari %totalQuestions soal",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-          a: "Sempurna!",
-          b: "Bagus sekali!",
-          c: "Anda sudah lulus",
-          d: "Silakan belajar lagi",
-          f: "Ulangi lagi dengan serius"
+          a: "Bagus!",
+          b: "Anda lulus.",
+          c: "Belajar lagi ya",
+          d: "Belajar lagi ya",
+          f: "Belajar lagi ya"
         },
 
         /* Options
@@ -171,9 +171,9 @@
           }
 
           //question title
-          _quizHTML += '<h2 class="' + class_questionTitle + '">';
+          _quizHTML += '<h4 class="' + class_questionTitle + '">';
           _quizHTML += question.q;
-          _quizHTML += '</h2>';
+          _quizHTML += '</h4>';
 
           //answer options list
           _quizHTML += '<ul class="' + class_questionAnswers + '">';
@@ -299,7 +299,7 @@
         resultsHTML += '<div class="' + class_quizResults + '">';
 
         //quiz score rank
-        resultsHTML += '<h1 class="' + class_quizScoreRank + '">';
+        resultsHTML += '<h3 class="' + class_quizScoreRank + '">';
         if ( totalScore > 80 ) {
           //rank 1: 80-100
           resultsHTML += plugin.config.quizScoreRank_text.a;
@@ -316,7 +316,7 @@
           //rank 5: 0-19
           resultsHTML += plugin.config.quizScoreRank_text.f;
         }
-        resultsHTML += '</h1>';
+        resultsHTML += '</h3>';
 
         //quiz score total
         resultsHTML += '<p class="' + class_quizScore + '">';
@@ -537,7 +537,7 @@
               resultsHTML += questions[ index ].selected + '<br>';
             }
             //display correct answer
-            resultsHTML += '<strong>Jawaban yang benar: </strong>';
+            resultsHTML += '<strong>Jawaban yang tepat: </strong>';
             resultsHTML += questions[ index ].a + '<br>';
             //close p tag
             resultsHTML += '</p>';
